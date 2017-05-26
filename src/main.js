@@ -6,9 +6,9 @@ Vue.use(VueMaterial)
 
 Vue.material.registerTheme('default', {
   primary: 'white',
-  accent: 'blue-grey',
+  accent: 'yellow',
   warn: 'red',
-  background: 'blue-grey'
+  background: 'white'
 })
 
 new Vue({
