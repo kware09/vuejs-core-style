@@ -10,7 +10,7 @@
     </md-whiteframe>
 
     <md-layout md-align="end" class="viewport">
-        <md-layout  md-flex="50">
+        <md-layout  md-flex-medium="100" md-flex-large="50">
           <md-whiteframe  class="widget md-flex">
             <md-toolbar>
               <div class="md-toolbar-container">
@@ -27,10 +27,9 @@
             <hr class="md-divider"></hr>
 
             <md-layout md-flex>
-              <md-layout md-flex="33">
-                <md-list class="md-flex">
+                <md-list md-hide-xsmall>
 
-                  <md-list-item>
+                  <md-list-item class="active">
 
                     <span>January 2017</span>
                   </md-list-item>
@@ -46,7 +45,7 @@
 
                   <md-divider />
                 </md-list>
-              </md-layout>
+
 
               <div class="md-flex">
                 <md-toolbar>
@@ -83,7 +82,7 @@
           </md-whiteframe>
         </md-layout>
 
-        <md-layout  md-flex="25">
+        <md-layout  md-flex-medium="100" md-flex-large="25">
           <md-whiteframe md-flex class="widget md-flex">
             <md-toolbar>
               <div class="md-toolbar-container">
@@ -169,7 +168,7 @@
           </md-whiteframe>
         </md-layout>
 
-        <md-layout  md-flex="25">
+        <md-layout  md-flex-medium="100" md-flex-large="25">
           <md-whiteframe md-flex class="widget md-flex">
             <md-toolbar>
               <div class="md-toolbar-container">
@@ -349,7 +348,11 @@ body {
   background-size: cover;
 }
 
-
+.active {
+  background-color: #ffeb3b;
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
+}
 .widget {
   background-color: $white;
   border-left: 8px solid #ffeb3b;
