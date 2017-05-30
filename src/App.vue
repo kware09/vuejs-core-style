@@ -9,17 +9,9 @@
 
     </md-whiteframe>
 
-    <md-layout md-align="end" class="viewport">
-
-      <p60 />
-
-      <payslip />
-
-      <taxDetails />
-
-    </md-layout>
 
 
+      <router-view></router-view>
 
 
     <md-sidenav class="md-left" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
@@ -29,16 +21,21 @@
         </div>
       </md-whiteframe>
       <md-list>
-       <md-list-item v-for="dashboard in dashboards">
+       <router-link tag="md-list-item" :to="'/'+dashboard.id" v-for="dashboard in dashboards" active-class='active-side-nav'>
+
          <md-icon>{{dashboard.icon}}</md-icon>
          <span>{{dashboard.description}}</span>
 
          <md-list-expand>
            <md-list>
-             <md-list-item v-for="tab in dashboard.tabs" class="md-inset">{{tab.description}}</md-list-item>
+
+             <md-list-item v-for="tab in dashboard.tabs" class="md-inset">
+             <router-link :to="'/'+dashboard.id+'/'+tab.id"   active-class='active-side-nav'>{{tab.description}}</router-link>
+           </md-list-item>
+
            </md-list>
          </md-list-expand>
-       </md-list-item>
+       </router-link>
 
      </md-list>
     </md-sidenav>
@@ -49,16 +46,7 @@
 
 <script>
 
-import p60 from './widgets/p60.vue'
-import payslip from './widgets/payslip.vue'
-import taxDetails from './widgets/taxDetails.vue'
-
 export default {
-  components: {
-    p60: p60,
-    payslip: payslip,
-    taxDetails: taxDetails
-  },
   computed: {
     dashboards () {
       return this.$store.getters.dashboardConfig
@@ -95,6 +83,11 @@ body {
   background-size: cover;
 }
 
+.active-side-nav
+{
+  color: #ffeb3b;
+}
+
 .active {
   background-color: #ffeb3b;
 border-bottom-right-radius: 10px;
@@ -124,5 +117,34 @@ border-top-right-radius: 10px;
 
 
   }
+
+  .slide-enter-active{
+  animation: slide-in 200ms ease-out forwards;
+}
+.slide-leave-active{
+  animation: slide-out 200ms ease-out forwards;
+}
+
+@keyframes slide-in {
+  from{
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  from{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to{
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+}
 
 </style>

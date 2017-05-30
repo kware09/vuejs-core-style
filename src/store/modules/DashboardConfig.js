@@ -24,25 +24,21 @@ const state = {
       id: 'expense',
       description: 'Expense',
       widgets: [{
-        id: 'expenses',
-        description: 'Expenses'
+        id: 'myExpenses',
+        description: 'My Expenses'
       }]
     }]
   },
   {
-    id: 'Manager',
+    id: 'hradmin',
     icon: 'group',
-    description: 'Manger Dashboard',
+    description: 'HR Admin',
     tabs: [{
-      id: 'myteam',
-      description: 'My Team',
+      id: 'search',
+      description: 'Search',
       widgets: [{
-        id: 'myteam',
-        description: 'My Team'
-      },
-      {
-        id: 'approvals',
-        description: 'Approvals'
+        id: 'hrpersonsearch',
+        description: 'Employee Search'
       }]
     }]
   }]
