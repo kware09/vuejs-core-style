@@ -1,5 +1,5 @@
-import employeeDashboard from '../dashboards/employee.vue'
-import hrAdminDashboard from '../dashboards/hradmin.vue'
+const employeeDashboard = resolve => require(['../dashboards/employee.vue'], resolve)
+const hrAdminDashboard = resolve => require(['../dashboards/hradmin.vue'], resolve)
 
 export const routes = [
   {

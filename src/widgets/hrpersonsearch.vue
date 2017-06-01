@@ -19,28 +19,35 @@
 
       <md-list>
 
-        <md-list-item>
+        <md-list-item v-for="employee in employees">
           <md-avatar>
         <img src="https://placeimg.com/40/40/people/1" alt="People">
       </md-avatar>
           <div class="md-list-text-container">
-       <span>Aine Buckley</span>
-       <span>5000963</span>
+       <span>{{employee.name}}</span>
+       <span>{{employee.personnelNo}}</span>
      </div>
 
      <div class="md-list-text-container">
-  <span>Developemnt Manager</span>
-  <span>Development</span>
+  <span>{{employee.jobTitle}}</span>
+  <span>{{employee.department}}</span>
 </div>
 
 <div class="md-list-text-container">
-<span>Reports to Manager</span>
-<span>Dave Welch</span>
+<span>Reports to: {{employee.reportsTo}}</span>
+<span>Start Date: {{employee.startDate}}</span>
 </div>
 
-          <md-button class="md-button md-list-action">
-            Actions
-          </md-button>
+<md-menu md-align-trigger>
+<md-button md-menu-trigger>Actions</md-button>
+
+<md-menu-content>
+<md-menu-item>View Dashboard</md-menu-item>
+<md-menu-item>Amend Salary</md-menu-item>
+<md-menu-item>Update Contracts</md-menu-item>
+<md-menu-item>End Person</md-menu-item>
+</md-menu-content>
+</md-menu>
         </md-list-item>
         <md-divider />
 
@@ -50,6 +57,45 @@
     </md-whiteframe>
   </md-layout>
 </template>
+
+
+<script>
+
+  export default {
+    data () {
+      return {
+        employees: [
+          { name: 'Aine Buckley',
+            personelNo: '1002039',
+            jobTitle: 'Development Manager',
+            department: 'Development',
+            reportsTo: 'Dave Welch',
+            startDate: '02/Jan/2012'
+          }, { name: 'Aine Buckley',
+            personelNo: '1002039',
+            jobTitle: 'Development Manager',
+            department: 'Development',
+            reportsTo: 'Dave Welch',
+            startDate: '02/Jan/2012'
+          }, { name: 'Aine Buckley',
+            personelNo: '1002039',
+            jobTitle: 'Development Manager',
+            department: 'Development',
+            reportsTo: 'Dave Welch',
+            startDate: '02/Jan/2012'
+          }, { name: 'Aine Buckley',
+            personelNo: '1002039',
+            jobTitle: 'Development Manager',
+            department: 'Development',
+            reportsTo: 'Dave Welch',
+            startDate: '02/Jan/2012'
+          }
+        ]
+      }
+    }
+}
+
+</script>
 
 <style lang="scss" scoped>
   .widget{
