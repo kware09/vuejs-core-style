@@ -8,20 +8,20 @@ const state = {
       id: 'pay',
       description: 'Pay',
       widgets: [{
-        id: 'p60',
-        description: 'P60'
+        id: 'taxDetails',
+        description: 'Tax Details'
       },
       {
         id: 'payslip',
         description: 'Payslips'
       },
       {
-        id: 'taxDetails',
-        description: 'Tax Details'
-      },
-      {
         id: 'bankDetails',
         description: 'Bank Details'
+      },
+      {
+        id: 'p60',
+        description: 'P60'
       }]
     },
     {

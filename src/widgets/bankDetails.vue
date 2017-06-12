@@ -8,7 +8,7 @@
 
 
 
-          <md-button class="md-icon-button">
+          <md-button v-on:click.native="goBank('Add')" class="md-icon-button">
             <md-icon>add</md-icon>
           </md-button>
 
@@ -23,7 +23,7 @@
         <span>Pay</span>
           <span>*******85</span>
 
-          <md-button class="md-button md-list-action">
+            <md-button v-on:click.native="goBank('Edit')" class="md-button md-list-action">
             Edit
           </md-button>
         </md-list-item>
@@ -33,7 +33,7 @@
           <span>Expenses</span>
           <span>*******85</span>
 
-          <md-button class="md-button md-list-action">
+          <md-button v-on:click.native="goBank('Edit')" class="md-button md-list-action">
             Edit
           </md-button>
         </md-list-item>
@@ -46,3 +46,13 @@
     </md-whiteframe>
   </md-layout>
 </template>
+
+<script>
+export default {
+  methods: { goBank (mode) {
+    this.$router.push({ name: 'bankDetails', params: { action: mode }})
+  }
+
+  }
+}
+</script>

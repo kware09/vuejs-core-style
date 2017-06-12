@@ -1,5 +1,5 @@
 <template>
-  <md-layout md-align="end" class="viewport">
+  <md-layout md-align="end">
 
 
 

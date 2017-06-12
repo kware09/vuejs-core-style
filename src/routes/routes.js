@@ -15,6 +15,7 @@ export const routes = [
   },
   {
     path: '/bankDetails/:action',
+    name: 'bankDetails',
     component: bankDetailsAddEdit,
     props: true
   },

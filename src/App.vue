@@ -10,7 +10,7 @@
     </md-whiteframe>
 
 
-      <div style="min-height: 100%">
+      <div class="viewport" :style="{ height: fullHeight+'px' }">
       <router-view></router-view>
 
     </div>
@@ -54,6 +54,11 @@ export default {
       return this.$store.getters.dashboardConfig
     }
   },
+  data () {
+    return {
+      fullHeight : document.documentElement.clientHeight - 64
+    }
+  },
   methods: {
     toggleLeftSidenav () {
       this.$refs.leftSidenav.toggle()
@@ -81,6 +86,11 @@ $white: #fff;
 
 .app {
   height:500px;
+}
+
+
+.viewport {
+  overflow-y: scroll;
 }
 
 body {
