@@ -48,8 +48,10 @@
 <md-menu-item>End Person</md-menu-item>
 </md-menu-content>
 </md-menu>
+
+<md-divider />
         </md-list-item>
-        <md-divider />
+
 
 
 

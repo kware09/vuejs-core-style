@@ -18,6 +18,7 @@ import p60 from '../widgets/p60.vue'
 import payslip from '../widgets/payslip.vue'
 import taxDetails from '../widgets/taxDetails.vue'
 import myExpenses from '../widgets/expenses.vue'
+import bankDetails from '../widgets/bankDetails.vue'
 
 export default {
   props: ['currentTab'],
@@ -25,7 +26,8 @@ export default {
     p60: p60,
     payslip: payslip,
     taxDetails: taxDetails,
-    myExpenses: myExpenses
+    myExpenses: myExpenses,
+    bankDetails: bankDetails
   },
   computed: {
     dashboards () {

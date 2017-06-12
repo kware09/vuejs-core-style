@@ -10,8 +10,10 @@
     </md-whiteframe>
 
 
-
+      <div style="min-height: 100%">
       <router-view></router-view>
+
+    </div>
 
 
     <md-sidenav class="md-left" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
@@ -77,6 +79,10 @@ export default {
 
 $white: #fff;
 
+.app {
+  height:500px;
+}
+
 body {
   background-image: url(https://s3-eu-west-1.amazonaws.com/craft-web-s3-2617/careers-home-hero.jpg);
 
@@ -85,7 +91,7 @@ body {
 
 .active-side-nav
 {
-  color: #ffeb3b;
+  color: #2980b9;
 }
 
 .active {

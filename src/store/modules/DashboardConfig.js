@@ -18,6 +18,10 @@ const state = {
       {
         id: 'taxDetails',
         description: 'Tax Details'
+      },
+      {
+        id: 'bankDetails',
+        description: 'Bank Details'
       }]
     },
     {
