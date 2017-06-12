@@ -1,6 +1,6 @@
 <template>
   <div class='fullscreen'>
-    <md-toolbar>
+    <md-toolbar style="background-color: #34495e">
       <md-button v-on:click.native="goBack" class="md-icon-button">
         <md-icon>keyboard_backspace</md-icon>
       </md-button>

@@ -114,7 +114,7 @@ border-top-right-radius: 10px;
   color: black;
   height: 430px;
   margin: 10px;
-  opacity: .95;
+  opacity: .9;
 
   .md-toolbar {
     border-top-left-radius: 20px;
