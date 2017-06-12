@@ -1,7 +1,7 @@
 <template>
   <md-layout  md-flex>
     <md-whiteframe md-flex class="widget md-flex">
-      <md-toolbar>
+     <md-toolbar class="md-accent">
         <div class="md-toolbar-container">
 
           <h2 class="md-title" style="flex: 1;">Person Search</h2>

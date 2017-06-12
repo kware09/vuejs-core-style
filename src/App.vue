@@ -84,9 +84,6 @@ export default {
 
 $white: #fff;
 
-.app {
-  height:500px;
-}
 
 
 .viewport {
@@ -97,26 +94,27 @@ body {
   background-image: url(https://s3-eu-west-1.amazonaws.com/craft-web-s3-2617/careers-home-hero.jpg);
 
   background-size: cover;
-}
+
+ }
 
 .active-side-nav
 {
-  color: #2980b9;
+  color: #2196f3;
 }
 
 .active {
-  background-color: #ffeb3b;
+  background-color: #2196f3;
 border-bottom-right-radius: 10px;
 border-top-right-radius: 10px;
 }
 .widget {
   background-color: $white;
-  border-left: 8px solid #ffeb3b;
+  border-left: 8px solid #2196f3;
   border-radius: 20px;
   color: black;
   height: 430px;
   margin: 10px;
-  opacity: .8;
+  opacity: .95;
 
   .md-toolbar {
     border-top-left-radius: 20px;

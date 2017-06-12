@@ -1,7 +1,7 @@
 <template>
   <md-layout  md-flex-medium="100" md-flex-large="25">
     <md-whiteframe md-flex class="widget md-flex">
-      <md-toolbar>
+      <md-toolbar class="md-accent">
         <div class="md-toolbar-container">
 
           <h2 class="md-title" style="flex: 1;">My Expenses</h2>
@@ -41,7 +41,7 @@
           </md-button>
         </md-list-item>
         <md-divider />
-      
+
 
       </md-list>
     </md-whiteframe>

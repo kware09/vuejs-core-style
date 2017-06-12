@@ -14,8 +14,8 @@ const router = new VueRouter({
 })
 
 Vue.material.registerTheme('default', {
-  primary: 'white',
-  accent: 'yellow',
+  primary: 'blue',
+  accent: 'white',
   warn: 'red',
   background: 'white'
 })

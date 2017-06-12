@@ -1,7 +1,7 @@
 <template>
   <md-layout  md-flex-medium="100" md-flex-large="50">
     <md-whiteframe  class="widget md-flex">
-      <md-toolbar>
+      <md-toolbar class="md-accent">
         <div class="md-toolbar-container">
 
           <h2 class="md-title" style="flex: 1;">Payslips</h2>
@@ -37,11 +37,11 @@
 
 
         <div class="md-flex">
-          <md-toolbar>
+          <md-toolbar class="md-accent">
 
             <h2 class="md-title" style="flex: 1">Payment Summary</h2>
 
-            <md-button class="md-raised md-accent">
+            <md-button class="md-raised md-primary">
               Full Payslip
             </md-button>
           </md-toolbar>
