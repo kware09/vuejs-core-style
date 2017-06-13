@@ -1,19 +1,12 @@
 <template>
-  <md-layout md-align="end">
-
-
-
-    <div v-for="widget in widgets" :is="widget.id" :key="widget.id">
-
-    </div>
-
-  </md-layout>
+<md-layout md-align="end">
+  <div v-for="widget in widgets" :is="widget.id" :key="widget.id">
+  </div>
+</md-layout>
 </template>
 
 
-
 <script>
-
 import p60 from '../widgets/p60.vue'
 import payslip from '../widgets/payslip.vue'
 import taxDetails from '../widgets/taxDetails.vue'
@@ -30,9 +23,10 @@ export default {
     bankDetails: bankDetails
   },
   computed: {
-    dashboards () {
+    dashboards() {
       return this.$store.getters.dashboardConfig
-    }, widgets () {
+    },
+    widgets() {
       var dashboardConfig = this.$store.getters.dashboardConfig
       var dashboard = dashboardConfig.find(dashboard => {
         if (dashboard.id === 'employee') {
@@ -49,3 +43,4 @@ export default {
   }
 }
 </script>
+>

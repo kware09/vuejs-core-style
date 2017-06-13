@@ -1,33 +1,33 @@
 <template>
-  <div class='fullscreen'>
-    <md-toolbar style="background-color: #34495e">
-      <md-button v-on:click.native="goBack" class="md-icon-button">
-        <md-icon>keyboard_backspace</md-icon>
-      </md-button>
+<div class='fullscreen'>
+  <md-toolbar style="background-color: #34495e">
+    <md-button v-on:click.native="goBack" class="md-icon-button">
+      <md-icon>keyboard_backspace</md-icon>
+    </md-button>
 
-      <h2 class="md-title" style="flex: 1">{{action}} Bank Details</h2>
+    <h2 class="md-title" style="flex: 1">{{action}} Bank Details</h2>
 
-    </md-toolbar>
+  </md-toolbar>
 
-    Form to add/edit bank details
-  </div>
+  Form to add/edit bank details
+</div>
 </template>
 
 <script>
 export default {
-
   props: ['action'],
-  methods: { goBack (mode) {
-    this.$router.go(-1)
-  }
+  methods: {
+    goBack(mode) {
+      this.$router.go(-1)
+    }
 
   }
 }
 </script>
 
 <style lang="scss">
-  .fullscreen {
+.fullscreen {
     background-color: white;
     height: 100%;
-  }
+}
 </style>
