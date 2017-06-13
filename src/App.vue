@@ -5,7 +5,7 @@
         <md-icon>menu</md-icon>
       </md-button>
 
-      <h2 class="md-title">People Point</h2>
+      <h2 class="md-title">Core HR</h2>
 
     </md-whiteframe>
 
@@ -54,9 +54,12 @@ export default {
       return this.$store.getters.dashboardConfig
     }
   },
+  mounted: function () {
+    window.addEventListener('resize', this.handleResize)
+  },
   data () {
     return {
-      fullHeight : document.documentElement.clientHeight - 64
+      fullHeight: document.documentElement.clientHeight - 64
     }
   },
   methods: {
@@ -75,6 +78,11 @@ export default {
     close (ref) {
       console.log('Closed: ' + ref)
       console.log('test')
+    },
+    handleResize (event) {
+
+      console.log('log');
+      this.fullHeight = document.documentElement.clientHeight - 64
     }
   }
 }

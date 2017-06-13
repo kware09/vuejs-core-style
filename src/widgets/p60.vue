@@ -46,38 +46,7 @@
           </md-button>
         </md-list-item>
 
-        <md-divider />
 
-        <md-list-item>
-
-          <span>2015</span>
-
-          <md-button class="md-button md-list-action">
-            View
-          </md-button>
-        </md-list-item>
-
-        <md-divider />
-
-        <md-list-item>
-
-          <span>2015</span>
-
-          <md-button class="md-button md-list-action">
-            View
-          </md-button>
-        </md-list-item>
-
-        <md-divider />
-
-        <md-list-item>
-
-          <span>2015</span>
-
-          <md-button class="md-button md-list-action">
-            View
-          </md-button>
-        </md-list-item>
 
         <md-divider />
 
