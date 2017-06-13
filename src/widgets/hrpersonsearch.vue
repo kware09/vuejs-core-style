@@ -1,6 +1,6 @@
 <template>
 <md-layout md-flex>
-  <md-whiteframe md-flex class="widget md-flex">
+  <md-whiteframe md-flex class="widget md-flex" :style="{ height: fullWidget+'px' }">
     <md-toolbar class="md-accent">
       <div class="md-toolbar-container">
         <h2 class="md-title" style="flex: 1;">Person Search</h2>
@@ -58,6 +58,7 @@
 export default {
   data() {
     return {
+      fullWidget: document.documentElement.clientHeight - 100,
       employees: [{
         name: 'Aine Buckley',
         personelNo: '1002039',
@@ -94,6 +95,6 @@ export default {
 
 <style lang="scss" scoped>
 .widget {
-    height: 600px;
+    min-height: 400px;
 }
 </style>

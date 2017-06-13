@@ -6,6 +6,7 @@
 </template>
 
 
+
 <script>
 import p60 from '../widgets/p60.vue'
 import payslip from '../widgets/payslip.vue'
@@ -43,4 +44,3 @@ export default {
   }
 }
 </script>
->

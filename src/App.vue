@@ -53,7 +53,7 @@ export default {
       return this.$store.getters.dashboardConfig
     }
   },
-  mounted: function () {
+  mounted() {
     window.addEventListener('resize', this.handleResize)
   },
   data() {
@@ -93,7 +93,7 @@ $white: #fff;
 }
 
 body {
-    background-image: url('https://s3-eu-west-1.amazonaws.com/craft-web-s3-2617/careers-home-hero.jpg');
+    background-image: url('./assets/grey.jpg');
     background-size: cover;
 
 }
@@ -107,7 +107,6 @@ body {
     background-color: #2196f3;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-
 }
 
 .widget {
@@ -119,6 +118,12 @@ body {
     margin: 10px;
     opacity: 0.9;
 
+    .widget-list {
+        margin: auto;
+        width: 90%;
+        height: 360px;
+        overflow-y: scroll;
+    }
     .md-toolbar {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
