@@ -120,7 +120,8 @@ body {
 
     .widget-list {
         margin: auto;
-        width: 90%;
+
+        border-radius: 20px;
         height: 360px;
         overflow-y: scroll;
     }
