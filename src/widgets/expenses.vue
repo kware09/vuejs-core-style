@@ -1,5 +1,5 @@
 <template>
-<md-layout md-flex-medium="100" md-flex-large="25">
+<md-layout md-flex-medium="100" md-flex-large="25"  md-flex-xlarge="25">
   <md-whiteframe md-flex class="widget md-flex">
     <md-toolbar class="md-accent">
       <div class="md-toolbar-container">
